@@ -1,4 +1,4 @@
 ### Leaders
-* [Simon Bennetts](mailto://psiinon@gmail.com)
-* [Ricardo Pereira](mailto://ricardo.pereira@owasp.org)
-* [Rick Mitchell](mailto://rick.mitchell@owasp.org)
+* [Jane Everyperson](mailto://j.everyperson@owasp.org)
+* [Fiona Goodleader](mailto://fiona.goodleader@owasp.org)
+* [Tyrese Yoishido-sha](mailto://tyrese.yoishidosha@owasp.org)
