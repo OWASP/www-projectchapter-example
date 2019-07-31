@@ -8,6 +8,9 @@ site_side: true
 <!-- rebuild 3 -->
 This page reflects an example page and starting point for creating a new OWASP Project's or Chapter's website pages.  This repository is a template repository and can be used to clone these files into a new repository so that basic files exist already. To clone from this template, when creating a new repository, choose www-projectchapter-example under Repository Template.
 
+<img src="repository_template.png" alt="repository template"/>
+
+
 For more videos see the links on the wiki videos page.
 
   <div class="video-container">
