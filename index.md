@@ -1,12 +1,12 @@
 ---
 
 layout: col-sidebar
-title: OWASP ZAP
+title: OWASP Project and Chapter Example
 site_side: true
 
 ---
 <!-- rebuild 3 -->
-The OWASP Zed Attack Proxy (ZAP) is one of the world’s most popular free security tools and is actively maintained by hundreds of international volunteers*. It can help you automatically find security vulnerabilities in your web applications while you are developing and testing your applications. Its also a great tool for experienced pentesters to use for manual security testing.
+This page reflects an example page and starting point for creating a new OWASP Project's or Chapter's website pages.  This repository is a template repository and can be used to clone these files into a new repository so that basic files exist already. To clone from this template, when creating a new repository, choose www-projectchapter-example under Repository Template.
 
 For more videos see the links on the wiki videos page.
 
@@ -14,17 +14,7 @@ For more videos see the links on the wiki videos page.
     <iframe src="//www.youtube.com/embed/ztfgip-UhWw?" allowfullscreen="true" width="640" height="360" frameborder="0"></iframe>
   </div>
   
-Interested in a ZAP talk or training event? See the talks tab. Not one near you? Contact a Zap Evangelist to arrange one!
-
-<!-- <div id="screenshots" class="page-body tab remove-el" role="tabpanel" aria-labelledby="screenshots-link" tabindex="0">
-  Testing another tab. This one is supposed to be for screenshots.
-</div>
-
-<div id="features" class="page-body tab remove-el" role="tabpanel" aria-labelledby="features-link" tabindex="0">
-  Testing another tab. This one is supposed to be for feature. Some more text.
-</div> -->
-
 <div class="github-buttons">
-  <iframe src="https://ghbtns.com/github-btn.html?user=twbs&repo=bootstrap&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
-  <iframe src="https://ghbtns.com/github-btn.html?user=twbs&repo=bootstrap&type=watch&count=true&v=2" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
+  <iframe src="https://ghbtns.com/github-btn.html?user=owasp&repo=www-projectchapter-example&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
+  <iframe src="https://ghbtns.com/github-btn.html?user=owasp&repo=www-projectchapter-example&type=watch&count=true&v=2" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
 </div>
