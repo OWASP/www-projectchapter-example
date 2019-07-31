@@ -1,17 +1,15 @@
 ### Project Information
 * [Flagship Project](#)
 * [Tool Project](#)
-* [Version 2.8.0](https://github.com/zaproxy/zaproxy/wiki/Downloads)
+* [Version 1.1.0](#)
 * [Builder](#)
 * [Breaker](#)
 
 ### Downloads
-* [Download OWASP Zap!](https://github.com/zaproxy/zaproxy/wiki/Downloads)
+* [Download!](#)
 
 ### Code Repository
-* [zaproxy](https://github.com/zaproxy/zaproxy/)
-* [zap-extensions](https://github.com/zaproxy/zap-extensions/)
+* [Example Project or Chapter](https://github.com/owasp/www-projectchapter-example/)
 
 ### Change Log
-* [zaproxy](https://github.com/zaproxy/zaproxy/commits/develop)
-* [zap-extensions](https://github.com/zaproxy/zap-extensions/commits/master)
+* [Ch-ch-ch changes](https://github.com/owasp/www-projectchapter-example/commits/master)
