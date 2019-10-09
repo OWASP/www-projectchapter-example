@@ -1,15 +1,17 @@
-### Project Information
+### [GROUPNAME] Information
 * [Flagship Project](#)
 * [Tool Project](#)
-* [Version 1.1.0](#)
+* [Version 2.8.0](#)
 * [Builder](#)
 * [Breaker](#)
 
-### Downloads
-* [Download!](#)
+### Downloads or Social Links
+* [Download](#)
+* [Meetup](#)
 
 ### Code Repository
-* [Example Project or Chapter](https://github.com/owasp/www-projectchapter-example/)
+* [repo](#)
 
 ### Change Log
-* [Ch-ch-ch changes](https://github.com/owasp/www-projectchapter-example/commits/master)
+* [changes](#)
+

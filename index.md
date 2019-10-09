@@ -1,23 +1,19 @@
 ---
 
 layout: col-sidebar
-title: OWASP Project and Chapter Example
-site_side: true
+title: OWASP [GROUPNAME]
+tags: example-tag
+level: 4
 
 ---
-<!-- rebuild 3 -->
-This page reflects an example page and starting point for creating a new OWASP Project's or Chapter's website pages.  This repository is a template repository and can be used to clone these files into a new repository so that basic files exist already. To clone from this template, when creating a new repository, choose www-projectchapter-example under Repository Template.
 
-<img src="repository_template.png" alt="repository template"/>
+This is an example of a Project or Chapter Page.  Please change these items to indicate the actual information you wish to present.  In addition to this information, the 'front-matter' above this text should be modified to reflect your actual information.  An explanation of each of the front-matter items is below:
 
+layout: This is the layout used by project and chapter pages.  You should leave this value as col-sidebar
 
-For more videos see the links on the wiki videos page.
+title: This is the title of your project or chapter page, usually the name.  For example, OWASP Zed Attack Proxy or OWASP Baltimore
 
-  <div class="video-container">
-    <iframe src="//www.youtube.com/embed/ztfgip-UhWw?" allowfullscreen="true" width="640" height="360" frameborder="0"></iframe>
-  </div>
-  
-<div class="github-buttons">
-  <iframe src="https://ghbtns.com/github-btn.html?user=owasp&repo=www-projectchapter-example&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
-  <iframe src="https://ghbtns.com/github-btn.html?user=owasp&repo=www-projectchapter-example&type=watch&count=true&v=2" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
-</div>
+tags: This is a space-delimited list of tags you associate with your project or chapter.  If you are using tabs, at least one of these tags should be unique in order to be used in the tabs files (an example tab is included in this repo) 
+
+level: For projects, this is your project level (2 - Incubator, 3 - Lab, 4 - Flagship)
+
