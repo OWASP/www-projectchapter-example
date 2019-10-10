@@ -18,5 +18,3 @@ tags: This is a space-delimited list of tags you associate with your project or 
 
 level: For projects, this is your project level (2 - Incubator, 3 - Lab, 4 - Flagship)
 
-repo: {{ site.github.repository_name }}<br/>
-or: {{ site.github.url }}
