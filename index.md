@@ -4,7 +4,7 @@ layout: col-sidebar
 title: OWASP [GROUPNAME]
 tags: example-tag
 level: 4
-
+type: 
 ---
 
 <!-- rebuild 1 -->
@@ -18,3 +18,4 @@ tags: This is a space-delimited list of tags you associate with your project or 
 
 level: For projects, this is your project level (2 - Incubator, 3 - Lab, 4 - Flagship)
 
+type: For projects, one of documentation, code, or tool
