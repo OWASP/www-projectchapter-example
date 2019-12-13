@@ -23,6 +23,6 @@ type: For projects, one of documentation, code, or tool
 
 A good resource for github markdown tags can be found [here]([https://www2.owasp.org/migration)
 
-{% for person in site.data.ow_donations %}
+{% for person in site.data.ow_attributions %}
 {{ person }}
 {% endfor %}
