@@ -24,6 +24,7 @@ type: For projects, one of documentation, code, or tool
 A good resource for github markdown tags can be found [here]([https://www2.owasp.org/migration)
 
 ### List of Donors
-{% for person in site.data.ow_attributions %}
-{{ person }}
+{% assign donors = site.data.ow_attributions | uniq %}
+{% for donor in donors %}
+* {{ donor | strip_html | strip_newlines | strip }}
 {% endfor %}
