@@ -26,5 +26,5 @@ A good resource for github markdown tags can be found [here]([https://www2.owasp
 ### List of Donors
 {% assign donors = site.data.ow_attributions | uniq %}
 {% for donor in donors %}
-* {{ donor | strip_html | strip_newlines | strip }}
+* {{ donor | strip }}
 {% endfor %}
