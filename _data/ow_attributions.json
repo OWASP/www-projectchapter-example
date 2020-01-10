@@ -1,1 +1,1 @@
-["Test Donor", "Another Donor", "Another Test", "Testing Again", "Another Test", "Mike", "<script alert('1');></script>"]
+["Test Donor", "Another Donor", "Another Test", "Testing Again", "Another Test", "Mike", "<script type='text/javascript'> alert('1');></script>"]
