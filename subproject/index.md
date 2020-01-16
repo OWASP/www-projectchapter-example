@@ -5,6 +5,7 @@ title: An example subdir
 
 ---
 
+* {{ site.url }}
 * {{ page.url }}
 * {{ site.github.url }}
 
