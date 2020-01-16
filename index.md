@@ -12,6 +12,7 @@ auto-migrated: 1
 * {{ site.url }}
 * {{ page.url }}
 * {{ site.github.url }}
+* https://{{site.github.url | replace: 'www2', ''}}{{page.url}}
 
 <!-- rebuild 6 -->
 This is an example of a Project or Chapter Page.  Please change these items to indicate the actual information you wish to present.  In addition to this information, the 'front-matter' above this text should be modified to reflect your actual information.  An explanation of each of the front-matter items is below:
