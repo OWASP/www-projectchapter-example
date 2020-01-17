@@ -1,5 +1,6 @@
 ---
 title: Example
+displaytext: Example Tab
 layout:  null
 tab: true
 order: 1
