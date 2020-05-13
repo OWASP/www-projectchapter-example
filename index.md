@@ -34,4 +34,3 @@ A good resource for github markdown tags can be found [here]([https://www2.owasp
 
 :+1:
 
-{{ page.url }}
