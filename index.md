@@ -9,6 +9,7 @@ altfooter: true
 
 ---
 
+
 <!-- rebuild 12 -->
 This is an example of a Project or Chapter Page.  Please change these items to indicate the actual information you wish to present.  In addition to this information, the 'front-matter' above this text should be modified to reflect your actual information.  An explanation of each of the front-matter items is below:
 
@@ -39,3 +40,27 @@ A good resource for github markdown tags can be found [here]([https://www2.owasp
 
 :+1:
 
+<a class='timeclass'>12:00 - 13:00 - Opening Session</a>
+
+<script type='text/javascript'>
+  $(function(){
+    $(".timeclass").hover(function() {
+      utc_str = $(this).text();
+      ndx = utc_str.indexOf(':');
+      st_hour_str = utc_str.substring(0, ndx);
+      st_min_str = utc_str.substring(ndx + 1, ndx + 3);
+      utc_dt = luxon.DateTime.utc(2020, 06, 06, parseInt(st_hour_str), parseInt(st_min_str), 0);
+      start_dt = utc_dt.setZone(luxon.DateTime.local().zoneName);
+
+      ndx = utc_str.lastIndexOf(':');
+      end_hour_str = utc_str.substring(ndx - 2, ndx - 1);
+      end_min_str = utc_str.substring(ndx + 1, ndx + 3);
+      utc_dt = luxon.DateTime.utc(2020, 06, 06, parseInt(end_hour_str), parseInt(end_min_str), 0);
+      end_dt = utc_dt.setZone(luxon.DateTime.local().zoneName);
+      popstr = start_dt.toLocaleString(luxon.DateTime.TIME_WITH_SECONDS) + ' to ' + end_dt.toLocaleString(luxon.DateTime.TIME_WITH_SHORT_OFFSET);
+      $(this).prop('title', popstr);
+    });
+  });
+
+  
+</script>
