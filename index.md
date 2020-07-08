@@ -10,7 +10,7 @@ altfooter: true
 ---
 
 
-<!-- rebuild 12 -->
+<!-- rebuild 13 -->
 This is an example of a Project or Chapter Page.  Please change these items to indicate the actual information you wish to present.  In addition to this information, the 'front-matter' above this text should be modified to reflect your actual information.  An explanation of each of the front-matter items is below:
 
 layout: This is the layout used by project and chapter pages.  You should leave this value as col-sidebar
