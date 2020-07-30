@@ -42,6 +42,9 @@ A good resource for github markdown tags can be found [here]([https://www2.owasp
 
 <a class='timeclass'>12:00 - 13:00 - Opening Session</a>
 
+### Check our Upcoming Meetup Events:
+{% include chapter_events.html group='owasp-los-angeles' %}
+
 <script type='text/javascript'>
   $(function(){
     $(".timeclass").hover(function() {
