@@ -6,7 +6,7 @@ tags: example-tag
 level: 4
 type: example
 altfooter: true
-meetup-group: OWASP-Project-Chapter-Example
+meetup-group: owasp-los-angeles
 country: 
 postal-code: 
 
@@ -46,7 +46,7 @@ A good resource for github markdown tags can be found [here]([https://www2.owasp
 <a class='timeclass'>12:00 - 13:00 - Opening Session</a>
 
 ### Check our Upcoming Meetup Events:
-{% include chapter_events.html group='owasp-los-angeles' %}
+{% include chapter_events.html group=page.meetup-group %}
 
 <script type='text/javascript'>
   $(function(){
