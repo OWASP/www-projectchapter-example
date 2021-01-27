@@ -45,7 +45,7 @@ A good resource for github markdown tags can be found [here]([https://www2.owasp
 
 <a class='timeclass'>12:00 - 13:00 - Opening Session</a>
 
-{% assign category = site.data.events | where: 'category', 'Global' | first %}
+{% assign category = site.data.events | where: "category", "Global" | first %}
    <ul>
       {% for event in category.events %}
       <li><a href="{{event.url}}" target="_blank" rel="noopener">{{event.name}}</a></li>
