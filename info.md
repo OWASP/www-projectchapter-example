@@ -1,4 +1,4 @@
-### [GROUPNAME] Information
+### Example Project Information
 * [Flagship Project](#)
 * [Tool Project](#)
 * [Version 2.8.0](#)
