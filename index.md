@@ -29,7 +29,7 @@ type: For projects, one of documentation, code, or tool
 
 A good resource for github markdown tags can be found [here]([https://www2.owasp.org/migration)
 
-### List of Donors
+### A List of Donors
 
 {% assign individual_supporter = site.data.ow_attributions | uniq %}
 {% for supporter in individual_supporter %}
