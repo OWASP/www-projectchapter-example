@@ -60,6 +60,11 @@ A good resource for github markdown tags can be found [here]([https://www2.owasp
 ### Check our Upcoming Meetup Events:
 {% include chapter_events.html group=page.meetup-group %}
 
+
+{% for m in site.data.tstmenu.yml %}
+{{m.title}}
+{% endfor %}
+
 <script type='text/javascript'>
   $(function(){
     $(".timeclass").hover(function() {
