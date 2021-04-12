@@ -20,7 +20,7 @@ postal-code:
 
 <!-- rebuild 24 -->
 
-{{ i18n.intro }}
+{{ i18n.intro | markdownify }}
 
 
 ### A List of Donors
