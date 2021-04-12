@@ -56,6 +56,10 @@ MENU
 
 <a class='timeclass'>12:00 - 13:00 - Opening Session</a>
 
+{% for project in site.data.projects %}
+{{ project.name }}
+{% endfor %}
+
 {% assign category = site.data.events | where: "category", "Global" | first %}
    <ul>
       {% for event in category.events %}
