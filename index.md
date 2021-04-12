@@ -14,13 +14,13 @@ postal-code:
 
 <link rel="stylesheet" href="/www-projectchapter-example/assets/css/styles.css">
 
-{% assign page.title = site.data.i18n.en.title %}
+{% assign page.title = site.data.i18n_en.title %}
 
 {{ page.title }}
 
 <!-- rebuild 24 -->
 
-{{ site.data.i18n.en.intro }}
+{{ site.data.i18n_en.intro }}
 
 
 ### A List of Donors
