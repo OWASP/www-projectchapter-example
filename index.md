@@ -13,14 +13,11 @@ postal-code:
 ---
 
 <link rel="stylesheet" href="/www-projectchapter-example/assets/css/styles.css">
+{% if '/en/' in page.url %}
 {% assign i18n = site.data.i18n_en | where: 'id', 'index' | first %}
-{% assign page.title = i18n.title %}
-
-{{ i18n.title }}
-
-<!-- rebuild 24 -->
-
 {{ i18n.intro | markdownify }}
+{% endif %}
+<!-- rebuild 24 -->
 
 
 ### A List of Donors
