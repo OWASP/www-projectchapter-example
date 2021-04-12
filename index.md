@@ -1,7 +1,7 @@
 ---
 
 layout: col-sidebar
-title: OWASP Example Project
+title: {{ site.data.i18n.en.Title }}
 tags: example-tag
 level: 4
 type: example
