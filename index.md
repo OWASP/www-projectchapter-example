@@ -17,6 +17,7 @@ postal-code:
 
 
 {% assign i18n = site.data.i18n_en | where: 'id', 'index' | first %}
+
 {{ i18n.intro | markdownify }}
 
 
