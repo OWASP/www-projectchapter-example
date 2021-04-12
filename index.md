@@ -1,7 +1,7 @@
 ---
 
 layout: col-sidebar
-title: {{ site.data.i18n.en.Title }}
+title: OWASP Project-Chapter Example
 tags: example-tag
 level: 4
 type: example
@@ -13,6 +13,8 @@ postal-code:
 ---
 
 <link rel="stylesheet" href="/www-projectchapter-example/assets/css/styles.css">
+
+{{ page.title = site.data.i18n.en.Title }}
 
 <!-- rebuild 24 -->
 This is an example of a Project or Chapter Page.  Please change these items to indicate the actual information you wish to present.  In addition to this information, the 'front-matter' above this text should be modified to reflect your actual information.  An explanation of each of the front-matter items is below:
