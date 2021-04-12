@@ -14,9 +14,12 @@ postal-code:
 
 <link rel="stylesheet" href="/www-projectchapter-example/assets/css/styles.css">
 
-{% assign page.title = site.data.i18n.en.Title %}
+{% assign page.title = site.data.i18n.en.title %}
+
+{{ page.title }}
 
 <!-- rebuild 24 -->
+
 {{ site.data.i18n.en.intro }}
 
 
