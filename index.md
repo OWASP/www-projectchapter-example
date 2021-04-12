@@ -13,7 +13,7 @@ postal-code:
 ---
 
 <link rel="stylesheet" href="/www-projectchapter-example/assets/css/styles.css">
-{% assign i18n = site.data.i18n_en | where: 'id', 'index | first %}
+{% assign i18n = site.data.i18n_en | where: 'id', 'index' | first %}
 {% assign page.title = i18n.title %}
 
 {{ i18n.title }}
