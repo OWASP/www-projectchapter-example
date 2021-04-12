@@ -16,7 +16,7 @@ postal-code:
 
 {% assign page.title = site.data.i18n_en.title %}
 
-{{ page.title }}
+{{ site.data.i18n_en.title }}
 
 <!-- rebuild 24 -->
 
