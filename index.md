@@ -49,6 +49,7 @@ MENU
 
 <a class='timeclass'>12:00 - 13:00 - Opening Session</a>
 
+#### Testing theme data elements
 {% for project in site.data.projects %}
 {{ project.name }}
 {% endfor %}
