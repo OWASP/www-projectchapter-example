@@ -3,7 +3,7 @@
 layout: col-sidebar
 title: OWASP Project-Chapter Example
 tags: example-tag
-level: 4
+level: 2
 type: example
 altfooter: true
 meetup-group: owasp-los-angeles
