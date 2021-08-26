@@ -6,7 +6,7 @@ tags: example-tag
 level: 2
 type: example
 altfooter: true
-meetup-group: owasp-los-angeles
+meetup-group: OWASP-OC
 country: 
 postal-code: 
 
