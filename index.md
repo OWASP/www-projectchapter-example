@@ -13,7 +13,7 @@ postal-code:
 ---
 
 <link rel="stylesheet" href="/www-projectchapter-example/assets/css/styles.css">
-<!-- rebuild 26 -->
+<!-- rebuild 28 -->
 
 
 {% assign i18n = site.data.i18n_en | where: 'id', 'index' | first %}
