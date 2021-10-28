@@ -1,9 +1,10 @@
 ### Example Project Information
-* ![Flagship Image](/assets/images/common/owasp_level_flagship.svg){:width="55px"}[Flagship Project](#)
-* ![Tool Project Image](/assets/images/common/owasp_tool_project.svg){:width="150px"}
 * [Version 2.8.0](#)
-* [Builder](#)
-* [Breaker](#)
+* <i class="fas fa-flag" style="color:#2ADA08;"></i> Flagship Project
+* <i class="fas fa-hammer" style="color:#233e81;"></i> Breaker
+* <i class="fas fa-toolbox" style="color:#233e81;"></i> Builder
+
+* <i class="fas fa-tools" style="color:#233e81;"></i> Tool
 
 ### Downloads or Social Links
 * [Download](#)
