@@ -68,9 +68,8 @@ MENU
    </ul>
    
 ### Check our Upcoming Meetup Events:
-{% comment %}{% include chapter_events.html group=page.meetup-group %}{% endcomment %}
+{% include chapter_events.html group=page.meetup-group %}
 
-<!--
 <script type='text/javascript'>
   $(function(){
     $(".timeclass").hover(function() {
@@ -93,41 +92,4 @@ MENU
 
   
 </script>
--->
 
-<div id='ch_events_div'>
-</div>
-
-<script type='text/javascript'>
-    $(function() {
-      // stuff here to load chapter events
-      var groupname = '{{ page.meetup-group }}';
-      var status = 'upcoming';
-      var past = false;
-
-      $.get("https://owaspadmin.azurewebsites.net/api/GetMeetupEvents?code=7OIbdfrvam1q5dbaZyN5JTZodrtWRHtnzBTtRB8ed1HT2Stax0iLNw==&group=" + groupname + "&status=" + status, function(data) {
-            
-  
-        var edata = jQuery.parseJSON(data);
-        var events = edata['data']['proNetworkByUrlname']['eventsSearch']['edges']
-        if(events.length > 0)
-        {
-          for(event in events)
-          {
-            dstr = "<hr>";
-            dstr += "<section style='background-color:#f3f4f6;'>";
-            dstr += "<strong>Event: " + event['node'].title + "</strong><br>";
-            dstr += "<strong>Date: " + event['node']['dateTime'].substr(0,10) + "</strong><br>";
-            dstr += "<strong>Time: " + event['node']['dateTime'].substr(11, 5) + " (" + event['node']['timezone'] + ") </strong><br>";
-            dstr += "<strong>Link: <a href='" + event['node']['eventUrl'] + "'>" + event['node']['eventUrl'] + "</a></strong><br>";
-            dstr += "<strong>Description:</strong></section>" + event['node']['description'];
-            
-            $("#ch_events_div").html(dstr);
-          }
-        }
-        
-      });
-
-    }); 
-
-  </script>
