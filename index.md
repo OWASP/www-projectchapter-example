@@ -70,7 +70,7 @@ MENU
 ### Check our Upcoming Meetup Events:
 {% comment %}{% include chapter_events.html group=page.meetup-group %}{% endcomment %}
 
-/*
+<!--
 <script type='text/javascript'>
   $(function(){
     $(".timeclass").hover(function() {
@@ -93,7 +93,8 @@ MENU
 
   
 </script>
-*/
+-->
+
 <div id='ch_events_div'>
 </div>
 
@@ -106,7 +107,6 @@ MENU
 
       $.get("https://owaspadmin.azurewebsites.net/api/GetMeetupEvents?code=7OIbdfrvam1q5dbaZyN5JTZodrtWRHtnzBTtRB8ed1HT2Stax0iLNw==&group=" + groupname + "&status=" + status, function(data) {
         var edata = jQuery.parseJSON(data);
-        alert(edata);
         if(edata.length > 0)
         {
           for(let i in edata)
@@ -121,7 +121,11 @@ MENU
             
             $("#ch_events_div").html(dstr);
           }
-        }        
+        }
+        else 
+        {
+          alert('Length is 0');
+        }
       });
 
     }); 
