@@ -68,9 +68,9 @@ MENU
    </ul>
    
 ### Check our Upcoming Meetup Events:
-{% include chapter_events.html group=page.meetup-group %}
+{% comment %}{% include chapter_events.html group=page.meetup-group %}{% endcomment %}
 
-
+/*
 <script type='text/javascript'>
   $(function(){
     $(".timeclass").hover(function() {
@@ -93,3 +93,37 @@ MENU
 
   
 </script>
+*/
+<div id='ch_events_div'>
+</div>
+
+<script type='text/javascript'>
+    $(function() {
+      // stuff here to load chapter events
+      var groupname = '{{ page.meetup-group }}';
+      var status = 'upcoming';
+      var past = false;
+
+      $.get("https://owaspadmin.azurewebsites.net/api/GetMeetupEvents?code=7OIbdfrvam1q5dbaZyN5JTZodrtWRHtnzBTtRB8ed1HT2Stax0iLNw==&group=" + groupname + "&status=" + status, function(data) {
+        var edata = jQuery.parseJSON(data);
+        alert(edata);
+        if(edata.length > 0)
+        {
+          for(let i in edata)
+          {
+            dstr = "<hr>";
+            dstr += "<section style='background-color:#f3f4f6;'>";
+            dstr += "<strong>Event: " + edata[i].name + "</strong><br>";
+            dstr += "<strong>Date: " + edata[i].local_date + "</strong><br>";
+            dstr += "<strong>Time: " + edata[i].local_time + " (" + edata[i].group.timezone + ") </strong><br>";
+            dstr += "<strong>Link: <a href='" + edata[i].link + "'>" + edata[i].link + "</a></strong><br>";
+            dstr += "<strong>Description:</strong></section>" + edata[i].description;
+            
+            $("#ch_events_div").html(dstr);
+          }
+        }        
+      });
+
+    }); 
+
+  </script>
