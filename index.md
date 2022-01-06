@@ -106,6 +106,7 @@ MENU
       var past = false;
 
       $.get("https://owaspadmin.azurewebsites.net/api/GetMeetupEvents?code=7OIbdfrvam1q5dbaZyN5JTZodrtWRHtnzBTtRB8ed1HT2Stax0iLNw==&group=" + groupname + "&status=" + status, function(data) {
+        alert(data);
         var edata = jQuery.parseJSON(data);
         if(edata.length > 0)
         {
@@ -122,10 +123,7 @@ MENU
             $("#ch_events_div").html(dstr);
           }
         }
-        else 
-        {
-          alert('Length is 0');
-        }
+        
       });
 
     }); 
