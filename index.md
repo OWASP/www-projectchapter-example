@@ -116,7 +116,7 @@ MENU
           {
             dstr = "<hr>";
             dstr += "<section style='background-color:#f3f4f6;'>";
-            dstr += "<strong>Event: " + event['node']['title'] + "</strong><br>";
+            dstr += "<strong>Event: " + event['node'].title + "</strong><br>";
             dstr += "<strong>Date: " + event['node']['dateTime'].substr(0,10) + "</strong><br>";
             dstr += "<strong>Time: " + event['node']['dateTime'].substr(11, 5) + " (" + event['node']['timezone'] + ") </strong><br>";
             dstr += "<strong>Link: <a href='" + event['node']['eventUrl'] + "'>" + event['node']['eventUrl'] + "</a></strong><br>";
