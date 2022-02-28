@@ -15,6 +15,7 @@ postal-code:
 <link rel="stylesheet" href="/www-projectchapter-example/assets/css/styles.css">
 <!-- rebuild 31 -->
 
+{% include address_multiline.html %}
 
 {% assign i18n = site.data.i18n_en | where: 'id', 'index' | first %}
 
