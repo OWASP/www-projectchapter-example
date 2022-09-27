@@ -12,9 +12,8 @@ postal-code:
 
 ---
 
-<link rel="stylesheet" href="{{site.baseurl}}/assets/css/styles.css">
-<!-- rebuild 34 -->
-
+<link rel="stylesheet" href="{{site.base_url}}/assets/css/styles.css">
+<!-- rebuild 30 -->
 {% include address_multiline.html %}
 
 {% assign i18n = site.data.i18n_en | where: 'id', 'index' | first %}
@@ -69,7 +68,9 @@ MENU
    </ul>
    
 ### Check our Upcoming Meetup Events:
-{% include chapter_events.html group=page.meetup-group %}
+<div id='ch_events_div'>
+</div>
+
 
 <script type='text/javascript'>
   $(function(){
@@ -89,8 +90,45 @@ MENU
       popstr = start_dt.toLocaleString(luxon.DateTime.TIME_WITH_SECONDS) + ' to ' + end_dt.toLocaleString(luxon.DateTime.TIME_WITH_SHORT_OFFSET);
       $(this).prop('title', popstr);
     });
-  });
 
-  
+    // stuff here to load chapter events
+      var groupname = '{{ page.meetup-group }}';
+      var past = '{% if page.past %}{{ page.past }}{% else %}false{% endif %}';
+      
+
+      var status = 'upcoming';
+
+      if(past == 'true')
+        status = 'past';
+      
+      $.get("https://owaspadmin.azurewebsites.net/api/GetMeetupEvents?code=7OIbdfrvam1q5dbaZyN5JTZodrtWRHtnzBTtRB8ed1HT2Stax0iLNw==&group=" + groupname + "&status=" + status, function(data) {
+        alert(data);
+        var edata = JSON.parse(data);
+        alert(edata);
+        if('data' in edata && 'proNetworkByUrlname' in edata['data'] && 'eventsSearch' in edata['data']['proNetworkByUrlname'] && 'edges' in edata['data']['proNetworkByUrlname']['eventsSearch'] )
+        {
+          var events = edata['data']['proNetworkByUrlname']['eventsSearch']['edges']
+          if(events.length > 0)
+          {
+            //alert(events[0]["node"]["title"]);
+            for(let i in events)
+            {
+              dstr += "<hr>";
+              dstr += "<section style='background-color:#f3f4f6;'>";
+              dstr += "<strong>Event: " + events[i]['node']['title'] + "</strong><br>";
+              dstr += "<strong>Date: " + (events[i]['node']['dateTime']).substring(0,10) + "</strong><br>";
+              dstr += "<strong>Time: " + (events[i]['node']['dateTime']).substring(11, 16) + " (" + events[i]['node']['timezone'] + ") </strong><br>";
+              dstr += "<strong>Link: <a href='" + events[i]['node']['eventUrl'] + "'>" + events[i]['node']['eventUrl'] + "</a></strong><br>";
+              dstr += "<strong>Description:</strong></section>" + events[i]['node']['description'];              
+            }
+            $("#ch_events_div").html(dstr);
+          }
+          else{
+            dstr = "<hr><italics>No events currently scheduled</italics>"
+            $("#ch_events_div").html(dstr);
+          }
+        }      
+      });
+  });  
 </script>
 
