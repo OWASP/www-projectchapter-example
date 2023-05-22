@@ -42,7 +42,7 @@ postal-code:
 :+1:
 
 
-{% for m in site.data.tstmenu.yml %}
+{% for m in site.data.tstmenu %}
 MENU
 {% endfor %}
 
