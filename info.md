@@ -1,4 +1,4 @@
-### [GROUPNAME] Information
+### Information
 * Provide Group Information
 
 ### Social Links
