@@ -1,3 +1,3 @@
 ### Leaders
-* [Leader One](mailto:leader.emailp@owasp.org)
-* [Leader Two](mailto:leader.emailp@owasp.org)
+* [Leader One](mailto:leader.email@owasp.org)
+* [Leader Two](mailto:leader.email@owasp.org)
